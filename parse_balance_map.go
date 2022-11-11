@@ -7,7 +7,7 @@ import (
 )
 
 type Claim struct {
-	Index  int           `json:"index"`
+	//Index  int           `json:"index"`
 	Amount string        `json:"amount"`
 	Proof  []common.Hash `json:"proof"`
 }
@@ -29,15 +29,14 @@ func ParseBalanceMap(balances []Balance) (MerkleDistributorInfo, error) {
 	}
 
 	tokenTotal := big.NewInt(0)
-	for idx, balance := range balances {
-		proof, err := tree.GetProof(idx, balance.Account, balance.Amount)
+	for _, balance := range balances {
+		proof, err := tree.GetProof(balance.Account, balance.Amount)
 		if err != nil {
 			return info, err
 		}
 		tokenTotal = big.NewInt(0).Add(tokenTotal, balance.Amount)
 
 		info.Claims = append(info.Claims, Claim{
-			Index:  idx,
 			Amount: "0x" + balance.Amount.Text(16),
 			Proof:  proof,
 		})
