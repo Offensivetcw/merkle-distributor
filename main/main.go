@@ -8,7 +8,6 @@ import (
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"
-	//distributor "github.com/fachebot/merkle-distributor"
 )
 
 func main() {
