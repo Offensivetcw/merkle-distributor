@@ -3,7 +3,7 @@ This package is the Go equivalent of [github.com/Uniswap/merkle-distributor](htt
 
 ## Install
 ```bash
-go get -u github.com/fachebot/merkle-distributor
+go get -u github.com/Offensivetcw/merkle-distributor
 ```
 
 ## Getting started
