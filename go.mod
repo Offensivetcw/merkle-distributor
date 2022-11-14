@@ -1,4 +1,4 @@
-module merkle-distributor
+module github.com/Offensivetcw/merkle-distributor
 
 go 1.17
 

@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	distributor "merkle-distributor"
+	distributor "github.com/Offensivetcw/merkle-distributor"
 
 	"math/big"
 
