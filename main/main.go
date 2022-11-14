@@ -3,7 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/fachebot/merkle-distributor"
+	distributor "merkle-distributor"
+
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"

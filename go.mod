@@ -1,4 +1,4 @@
-module github.com/fachebot/merkle-distributor
+module merkle-distributor
 
 go 1.17
 
